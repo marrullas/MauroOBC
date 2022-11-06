@@ -1,0 +1,96 @@
+public class Main {
+    public static void main(String args[]) {
+        Cliente nuevoCliente = new Cliente();
+        nuevoCliente.setEdad(35);
+        nuevoCliente.setNombre("María");
+        nuevoCliente.setTelefono("938373440");
+        nuevoCliente.setCredito("100000");
+        System.out.println(nuevoCliente.getEdad());
+        System.out.println(nuevoCliente.getNombre());
+        System.out.println(nuevoCliente.getTelefono());
+        System.out.println(nuevoCliente.getCredito());
+        
+        Trabajador nuevoTrabajador = new Trabajador();
+        nuevoTrabajador.setEdad(35);
+        nuevoTrabajador.setNombre("María");
+        nuevoTrabajador.setTelefono("938373440");
+        nuevoTrabajador.setSalario("100000");
+        System.out.println(nuevoTrabajador.getEdad());
+        System.out.println(nuevoTrabajador.getNombre());
+        System.out.println(nuevoTrabajador.getTelefono());
+        System.out.println(nuevoTrabajador.getSalario());
+    }
+
+}
+
+class Persona {
+        private int edad;
+        private String nombre;
+        private String telefono;
+        
+         public int getEdad()
+        {
+                return edad;
+        }
+        
+        public void setEdad(int edad)
+        {
+                this.edad = edad;
+        }
+        
+         public String getNombre()
+        {
+                return nombre;
+        }
+        
+        public void setNombre(String nombre)
+        {
+                this.nombre = nombre;
+        }
+        
+         public String getTelefono()
+        {
+                return telefono;
+        }
+        
+        public void setTelefono(String telefono)
+        {
+                this.telefono = telefono;
+        }
+        
+
+}
+
+class Cliente extends Persona{
+    
+    private int credito;
+    
+             public int getCredito()
+        {
+                return credito;
+        }
+        
+        public void setCredito(int credito)
+        {
+                this.credito = credito;
+        }
+        
+    
+}
+
+class Trabajador extends Persona{
+    
+    private int salario;
+    
+             public int getSalario()
+        {
+                return salario;
+        }
+        
+        public void setSalario(int salario)
+        {
+                this.salario = salario;
+        }
+        
+    
+}

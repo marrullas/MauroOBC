@@ -1,0 +1,88 @@
+//Ejercicio 1
+public class MyClass {
+    public static void main(String args[]) {
+        int numero = 0;
+        
+        if(numero > 0){
+            System.out.println("Positivo");
+        }else if(numero < 0){
+            System.out.println("Negativo");
+        }else {
+            System.out.println("cero");
+        }
+    }
+
+}
+//ejercicio 2
+public class MyClass {
+    public static void main(String args[]) {
+        int numero = 0;
+        
+        while(numero < 3){
+            numero++;
+            System.out.println(numero);
+        }
+    }
+
+}
+
+//ejercicio 3
+public class MyClass {
+    public static void main(String args[]) {
+        int numero = 0;
+        
+        do{
+            numero++;
+            System.out.println(numero);
+        }while(numero == 0);
+    }
+
+}
+//ejercicio 4
+
+public class MyClass {
+    public static void main(String args[]) {
+        int numero = 0;
+        
+        for(numero=0;numero <=3; numero++){
+            
+            System.out.println(numero);
+        }
+    }
+
+}
+
+//ejercicio 5
+
+public class MyClass {
+    public static void main(String args[]) {
+        int estacion = 3;
+        
+        switch(estacion){
+            case 1:{
+                System.out.println("primevera");
+                break;
+            }
+            case 2:{
+                System.out.println("verano");
+                break;
+            }
+            case 3:{
+                System.out.println("otoño");
+                break;
+            }
+            case 4:{
+                System.out.println("invierno");
+                break;
+            }
+            default:{
+                System.out.println("Fuera de la tierra");
+            }
+
+
+        }
+    }
+
+}
+
+

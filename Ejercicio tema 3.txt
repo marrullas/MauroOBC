@@ -1,0 +1,35 @@
+//Ejercicio 1
+
+public class MyClass {
+    public static void main(String args[]) {
+      sumatoria(10,20,30);
+    }
+    
+    public static void sumatoria(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+}
+
+
+//Ejercicio 2
+
+public class MyClass {
+    public static void main(String args[]) {
+      Coche miCoche = new Coche();
+      
+      var totalPuertas = miCoche.agregarPuerta();
+      
+      System.out.println(totalPuertas);
+      
+    }
+
+}
+
+class Coche {
+    
+    int numeroPuertas = 4;
+    public int agregarPuerta(){
+        numeroPuertas = numeroPuertas + 1;
+        return numeroPuertas;
+    }
+}
