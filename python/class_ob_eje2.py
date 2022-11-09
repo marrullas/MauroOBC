@@ -2,10 +2,11 @@ class Alumno():
     nombre= None
     nota= None
 
-    def __init__(self, nombre, nota):
+    #constructor de la clase
+    def __init__(self, nombre, nota): 
         self.nombre=nombre
         self.nota=nota
-
+    #función por defecto para imprimir clase
     def __str__(self):
         return f"nombre: {self.nombre}, nota: {self.nota}"
 
